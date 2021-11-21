@@ -7,9 +7,12 @@ module Demo.Client where
 import Language.Haskell.Liquid.Equational
 
 import Demo.Lib
+import Demo.Twice
+import Demo.Loop
+import Demo.Loop1
 
-bump :: Int -> Int
-bump n = if n > 0 then incr n else 0
+-- bump :: Int -> Int
+-- bump n = if n > 0 then incr n else 0
 
 data Simple = A | B | C
 

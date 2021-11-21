@@ -16,6 +16,10 @@ library
   exposed-modules:
       Demo.Lib,
       Demo.Client
+  other-modules:
+      Demo.Twice,
+      Demo.Loop,
+      Demo.Loop1
   hs-source-dirs:
       src
   build-depends:
