@@ -1,3 +1,16 @@
+
+# Build
+
+Use ghcup to install:
+
+- GHC 8.10.7, base-4.14.3.0
+- cabal 3.4.1.0
+
+```sh
+cabal v2-build
+```
+See https://github.com/ucsd-progsys/liquidhaskell/issues/1883 if this doesn't work
+
 # LiquidHaskell as a GHC Plugin
 
 This repo demonstrates how to use [LiquidHaskell](https://github.com/ucsd-progsys/liquidhaskell) as a GHC plugin.
@@ -75,4 +88,3 @@ $ ghcid -c "cabal v2-repl"
 The plugin also ensures that specifications written for one 
 package are used when checking client packages. For an example, 
 see the associated [lh-plugin-demo-client package](https://github.com/ucsd-progsys/lh-plugin-demo-client/).
-
