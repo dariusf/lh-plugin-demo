@@ -18,6 +18,7 @@ library
       Demo.Client
   other-modules:
       Demo.Twice,
+      Demo.TwiceBounded,
       Demo.Loop,
       Demo.Loop1
   hs-source-dirs:
