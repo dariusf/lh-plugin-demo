@@ -48,6 +48,12 @@ test2 x = fourtimes x
 -- test3 :: Int -> Int
 -- test3 x = qq x
 
+-- making this polymorphic doesn't work because our theorem below requires the
+-- output to be of the same type as the first parameter
+
+-- {-@ applyN :: n:Nat -> (a -> a) -> a -> a / [n] @-}
+-- applyN :: Int -> (a -> a) -> a -> a
+
 {-@ reflect applyN @-}
 {-@ applyN :: n:Nat -> (Nat -> Nat) -> Nat -> Nat / [n] @-}
 applyN :: Int -> (Int -> Int) -> Int -> Int
